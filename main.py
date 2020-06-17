@@ -1,6 +1,9 @@
 import urllib
 import os
 from flask import abort, request, Flask
+import requests
+import requests.auth
+
 
 app = Flask(__name__)
 
@@ -26,7 +29,13 @@ def reddit_callback():
 		abort(403)
 	code = request.args.get('code')
 	# We'll change this next line in just a moment
-	return "got a code! %s" % code
+	
+	try:
+		token = get_token(code)
+		return "got a code! %s" % token
+	except Exception:
+		return "ERROR"
+	
 
 
 def make_authorization_url():
@@ -43,6 +52,19 @@ def make_authorization_url():
 			  "scope": "identity"}
 	url = "https://ssl.reddit.com/api/v1/authorize?" + urllib.parse.urlencode(params)
 	return url
+
+
+def get_token(code):
+	client_auth = requests.auth.HTTPBasicAuth(CLIENT_ID, CLIENT_SECRET)
+	post_data = {"grant_type": "authorization_code",
+				 "code": code,
+				 "redirect_uri": REDIRECT_URI}
+	response = requests.post("https://ssl.reddit.com/api/v1/access_token",
+							 auth=client_auth,
+							 data=post_data)
+	token_json = response.json()
+	response.raise_for_status()
+	return token_json["access_token"]
 
 # Left as an exercise to the reader.
 # You may want to store valid states in a database or memcache,
