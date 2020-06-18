@@ -4,10 +4,10 @@ Ejemplo de flujo de uso de OAuth2 con el flujo authorization code para obtener e
 ## Formato 
 El ejemplo consta de distintas ramas donde en cada una se va avanzando en la utilización de dicho flujo
 
-- [step_1](https://github.com/agrojas/oauth2-example/tree/step_1)
-- [step_2](https://github.com/agrojas/oauth2-example/tree/step_2)
-- [step_3](https://github.com/agrojas/oauth2-example/tree/step_3)
-- [step_4](https://github.com/agrojas/oauth2-example/tree/step_4)
+- [step_1](https://github.com/agrojas/oauth2-example/tree/step_1) Paso 1 del flujo
+- [step_2](https://github.com/agrojas/oauth2-example/tree/step_2) Pasos 1 y 2 del flujo
+- [step_3](https://github.com/agrojas/oauth2-example/tree/step_3) Pasos 1,2,3 y 4 del flujo
+- [step_4](https://github.com/agrojas/oauth2-example/tree/step_4) Flujo completo
 
 ## Lenguaje
 Python
