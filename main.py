@@ -1,6 +1,6 @@
 import urllib
 import os
-import urllib
+from flask import Flask
 
 CLIENT_ID = os.environ['REDDIT_CLIENT_ID']
 CLIENT_SECRET = os.environ['REDDIT_CLIENT_SECRET']
