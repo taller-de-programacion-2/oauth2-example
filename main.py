@@ -1,6 +1,7 @@
 import urllib
 import os
 import urllib
+from flask import Flask
 
 CLIENT_ID = os.environ['REDDIT_CLIENT_ID']
 CLIENT_SECRET = os.environ['REDDIT_CLIENT_SECRET']
@@ -34,6 +35,7 @@ def make_authorization_url():
 # or perhaps cryptographically sign them and verify upon retrieval.
 def save_created_state(state):
 	pass
+
 def is_valid_state(state):
 	return True
 
