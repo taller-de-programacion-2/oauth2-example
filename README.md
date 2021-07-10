@@ -6,8 +6,7 @@ El ejemplo consta de distintas ramas donde en cada una se va avanzando en la uti
 
 - [step_1](https://github.com/agrojas/oauth2-example/tree/step_1) Paso 1 del flujo
 - [step_2](https://github.com/agrojas/oauth2-example/tree/step_2) Pasos 1 y 2 del flujo
-- [step_3](https://github.com/agrojas/oauth2-example/tree/step_3) Pasos 1,2,3 y 4 del flujo
-- [step_4](https://github.com/agrojas/oauth2-example/tree/step_4) Flujo completo
+- [step_3](https://github.com/agrojas/oauth2-example/tree/step_3) Flujo completo
 
 ## Lenguaje
 Python
