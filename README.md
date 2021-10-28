@@ -7,12 +7,16 @@ El ejemplo consta de distintas ramas donde en cada una se va avanzando en la uti
 - [step_1](https://github.com/agrojas/oauth2-example/tree/step_1) Paso 1 del flujo
 - [step_2](https://github.com/agrojas/oauth2-example/tree/step_2) Pasos 1 y 2 del flujo
 - [step_3](https://github.com/agrojas/oauth2-example/tree/step_3) Flujo completo
+- [step_4](https://github.com/agrojas/oauth2-example/tree/step_4) Acceso a nuevos recursos
 
 ## Lenguaje
+
 Python
 
 # Dependencias
-Flask
+
+- requests
+- Flask
 
 
 # Instalación
@@ -24,5 +28,5 @@ export REDDIT_CLIENT_SECRET="CLIENT_SECRET"
 
 ```
 
-Tanto CLIEN_ID como CLIENT_SECRET se obtienen dando de alta una app en https://www.reddit.com/prefs/apps/
+Tanto CLIENT_ID como CLIENT_SECRET se obtienen dando de alta una app en https://www.reddit.com/prefs/apps/
 
