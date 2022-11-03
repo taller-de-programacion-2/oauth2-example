@@ -1,11 +1,15 @@
 import urllib
 import os
 from flask import abort, request, Flask
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
-CLIENT_ID = os.environ['REDDIT_CLIENT_ID']
-CLIENT_SECRET = os.environ['REDDIT_CLIENT_SECRET']
+
+load_dotenv()
+
+CLIENT_ID = os.getenv('REDDIT_CLIENT_ID')
+CLIENT_SECRET = os.getenv('REDDIT_CLIENT_SECRET')
 REDIRECT_URI = "http://localhost:65010/reddit_callback"
 
 

@@ -1,1 +1,4 @@
-.credentials
+.idea/
+venv/
+.env
+__pycache__
